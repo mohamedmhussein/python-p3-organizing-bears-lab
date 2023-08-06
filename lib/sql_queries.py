@@ -17,12 +17,18 @@ select_all_bears_names_and_orders_in_alphabetical_order = """
 """
 
 select_all_bears_names_and_ages_that_are_alive_and_order_youngest_to_oldest = """
+    
+    SELECT name, age
+    FROM bears
+    WHERE alive =TRUE
+    ORDER BY bears.age;
+    
     SELECT
         name, age
     FROM
         bears
     WHERE
-        alive = TRUE
+        alive
     ORDER BY
         bears.age;
 """
