@@ -24,7 +24,7 @@ select_all_bears_names_and_ages_that_are_alive_and_order_youngest_to_oldest = ""
     WHERE
         alive = TRUE
     ORDER BY
-        age;
+        bears.age;
 """
 
 select_oldest_bear_and_returns_name_and_age = """
